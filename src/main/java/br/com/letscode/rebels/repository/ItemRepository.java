@@ -1,9 +1,4 @@
-package br.com.letscode.rebels.repository;
+package StarWarsRestAPIJavaSpring.letscode.repository;
 
-public class ItemRepository {
-
-	public ItemRepository() {
-		// TODO Auto-generated constructor stub
-	}
-
+public interface ItemRepository {
 }

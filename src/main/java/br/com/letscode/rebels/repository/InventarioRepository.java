@@ -1,6 +1,6 @@
 package StarWarsRestAPIJavaSpring.letscode.repository;
 
-public interface RebeldeRepository {
+public interface InventarioRepository {
 
 
 }
