@@ -1,6 +1,8 @@
 package br.com.letscode.rebels.util;
 
+import br.com.letscode.rebels.dto.LocalizacaoDTO;
 import br.com.letscode.rebels.dto.RebeldeResponseDTO;
+import br.com.letscode.rebels.entity.Localizacao;
 import br.com.letscode.rebels.model.RebeldeEntity;
 
 public class ConverterUtil {
@@ -25,6 +27,24 @@ public class ConverterUtil {
                 .lat(dto.getLat())
                 .lon(dto.getLon())
                 .nomeBase(dto.getNomeBase())
+                .build();
+        return entity;
+    }
+    
+    public static LocalizacaoDTO toDTO(Localizacao entity) {
+        LocalizacaoDTO dto = LocalizacaoDTO.builder()
+                .latitude(entity.getLatitude())
+                .longitude(entity.getLongitude())
+                .nome(entity.getNome())
+                .build();
+        return dto;
+    }
+
+    public static Localizacao toDTO(LocalizacaoDTO dto) {
+        Localizacao entity = Localizacao.builder()
+                .latitude(dto.getLatitude())
+                .longitude(dto.getLongitude())
+                .nome(dto.getNome())
                 .build();
         return entity;
     }
