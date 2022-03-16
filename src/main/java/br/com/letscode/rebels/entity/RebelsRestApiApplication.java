@@ -1,4 +1,4 @@
-package br.com.letscode.rebels;
+package br.com.letscode.rebels.entity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
