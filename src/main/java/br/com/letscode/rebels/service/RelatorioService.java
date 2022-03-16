@@ -1,4 +1,4 @@
-package StarWarsRestAPIJavaSpring.letscode.service;
+package br.com.letscode.rebels.service;
 
 public class RelatorioService {
 }

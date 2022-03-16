@@ -1,4 +1,4 @@
-package StarWarsRestAPIJavaSpring.letscode.dto;
+package br.com.letscode.rebels.dto;
 
 import br.com.letscode.rebels.enums.Genero;
 

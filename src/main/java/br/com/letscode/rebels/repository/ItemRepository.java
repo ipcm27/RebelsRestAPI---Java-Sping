@@ -1,4 +1,8 @@
-package StarWarsRestAPIJavaSpring.letscode.repository;
+package br.com.letscode.rebels.repository;
 
-public interface ItemRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.com.letscode.rebels.entity.Item;
+
+public interface ItemRepository extends JpaRepository<Item, String>  {
 }

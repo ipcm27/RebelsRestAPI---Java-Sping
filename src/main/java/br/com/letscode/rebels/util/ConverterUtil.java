@@ -1,7 +1,10 @@
 package br.com.letscode.rebels.util;
 
 import br.com.letscode.rebels.dto.RebeldeResponseDTO;
-import br.com.letscode.rebels.model.RebeldeEntity;
+import br.com.letscode.rebels.dto.*;
+import br.com.letscode.rebels.entity.*;
+import lombok.Builder;
+
 
 public class ConverterUtil {
 
