@@ -1,6 +1,5 @@
-package StarWarsRestAPIJavaSpring.letscode.entity;
+package br.com.letscode.rebels.entity;
 
 public class Inventario {
-
 
 }

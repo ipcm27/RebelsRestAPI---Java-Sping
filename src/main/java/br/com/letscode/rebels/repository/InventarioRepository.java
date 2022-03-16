@@ -1,6 +1,13 @@
-package StarWarsRestAPIJavaSpring.letscode.repository;
+package br.com.letscode.rebels.repository;
 
-public interface InventarioRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.com.letscode.rebels.entity.Inventario;
+
+
+
+public interface InventarioRepository extends JpaRepository<Inventario,Long>{
+	
 
 
 }
