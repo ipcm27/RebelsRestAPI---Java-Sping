@@ -1,11 +1,8 @@
 package br.com.letscode.rebels.repository;
 
-<<<<<<< HEAD
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.com.letscode.rebels.entity.RebeldeEntity;
-=======
-import br.com.letscode.rebels.model.RebeldeEntity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -44,9 +41,5 @@ public class RebeldeRepository {
     public static void save(RebeldeEntity entity) {
         rebeldes.add(entity);
     }
->>>>>>> 77176ee0a9a6a562b251cb210b22d1285b9b2b1e
-
-public interface RebeldeRepository extends JpaRepository<RebeldeEntity, String> {
-
 
 }
