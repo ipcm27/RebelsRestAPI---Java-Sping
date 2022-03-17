@@ -1,5 +1,6 @@
 package br.com.letscode.rebels.dto;
 
+import br.com.letscode.rebels.entity.ItemEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,6 +17,6 @@ public class RebeldeResponseDTO {
     private double lat;
     private double lon;
     private String nomeBase;
-    private List<ItemDTO> inventario;
+    private List<ItemEntity> inventario; // TODO: Usar DTO em vez de entity
     private boolean isTraidor = false;
 }
