@@ -21,6 +21,7 @@ public class ConverterUtil {
                 .genero(entity.getGenero())
                 .lat(entity.getLat())
                 .lon(entity.getLon())
+                .inventario(entity.getInventario())
                 .nomeBase(entity.getNomeBase())
                 .build();
         return dto;
@@ -34,6 +35,7 @@ public class ConverterUtil {
                 .lat(dto.getLat())
                 .lon(dto.getLon())
                 .nomeBase(dto.getNomeBase())
+                .inventario(dto.getInventario())
                 .build();
         return entity;
     }

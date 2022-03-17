@@ -10,6 +10,8 @@ import lombok.Setter;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @Builder
 public class RebeldeEntity {
@@ -20,6 +22,7 @@ public class RebeldeEntity {
     private double lat;
     private double lon;
     private String nomeBase;
+    private List<ItemEntity> inventario;
     private boolean isTraidor = false;
 	
 }
