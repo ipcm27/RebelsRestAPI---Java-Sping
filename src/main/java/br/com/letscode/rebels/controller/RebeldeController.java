@@ -2,6 +2,8 @@ package br.com.letscode.rebels.controller;
 
 import br.com.letscode.rebels.dto.RebeldeResponseDTO;
 import br.com.letscode.rebels.service.RebeldeService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,11 +15,8 @@ import java.util.List;
 @RequestMapping("/rebeldes")
 public class RebeldeController {
 
+	@Autowired
 	private final RebeldeService rebeldeService;
-
-	public RebeldeController(RebeldeService rebeldeService) {
-		this.rebeldeService = rebeldeService;
-	}
 
 	@GetMapping
 	public ResponseEntity<List<RebeldeResponseDTO>> getAllRebels() {
