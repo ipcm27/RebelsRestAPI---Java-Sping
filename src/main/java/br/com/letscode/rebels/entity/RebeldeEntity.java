@@ -1,30 +1,33 @@
 package br.com.letscode.rebels.entity;
 
-import br.com.letscode.rebels.dto.LocalizacaoDTO;
-import br.com.letscode.rebels.dto.RebeldeResponseDTO;
-import br.com.letscode.rebels.dto.RebeldeResponseDTO.RebeldeResponseDTOBuilder;
+import br.com.letscode.rebels.dto.InventarioDTO;
 import br.com.letscode.rebels.enums.Genero;
+import br.com.letscode.rebels.dto.LocalizacaoDTO;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.Builder;
-import lombok.Data;
 
-import java.util.List;
-
-@Data
-@Builder
+@Getter
 public class RebeldeEntity {
-  
-	private String nome;
-    private int idade;
-    private char genero;
-    private double lat;
-    private double lon;
-    private String nomeBase;
-    private List<ItemEntity> inventario;
-    private boolean isTraidor = false;
-	
+
+    private String nome;
+    private Long id;
+    private Integer idade;
+    private Genero genero;
+    @Setter
+    private Integer acusacoes = 0;
+    @Setter
+    private InventarioDTO inventario;
+    @Setter
+    private LocalizacaoDTO localizacao;
+    @Setter
+    private LocalizacaoDTO localizacaoAtualizada;
+
+    public boolean traidor(){
+        if(acusacoes == 3){
+            return true;
+        } return false;
+    }
+
+
+
 }
-
-
-

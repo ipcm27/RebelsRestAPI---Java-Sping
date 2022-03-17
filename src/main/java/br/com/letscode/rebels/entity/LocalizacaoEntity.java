@@ -1,15 +1,18 @@
 package br.com.letscode.rebels.entity;
 
-import org.springframework.data.annotation.Id;
-
-import lombok.Data;
-
-@Data
+import br.com.letscode.rebels.dto.RebeldeDTO;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import br.com.letscode.rebels.dto.LocalizacaoDTO;
 
 public class LocalizacaoEntity {
-	
-	@Id
-	private String id;
-	private String latitude;
-    private String longitude;
+
+    @PutMapping("localizacao/{idRebelde}")
+    public ResponseEntity<RebeldeEntity> atualizarLocalizacaoRebelde
+            (@PathVariable String idRebelde, @RequestBody
+                    LocalizacaoDTO localizacaoDto) {
+        return atualizarLocalizacaoRebelde(idRebelde, localizacaoDto);
+    }
 }

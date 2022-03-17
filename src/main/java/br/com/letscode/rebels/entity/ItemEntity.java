@@ -2,14 +2,11 @@ package br.com.letscode.rebels.entity;
 
 import lombok.Data;
 
-
 @Data
 public class ItemEntity {
-	
-	private String id;
-	private String nome;
-	private Integer pontos;
 
-	
+    private String nome;
+    private int pontos = 0;
+    private int quantidade = 1;
 
 }
