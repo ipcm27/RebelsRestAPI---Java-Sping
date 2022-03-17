@@ -2,15 +2,15 @@ package br.com.letscode.rebels.util;
 
 import br.com.letscode.rebels.dto.LocalizacaoDTO;
 import br.com.letscode.rebels.dto.RebeldeResponseDTO;
-<<<<<<< HEAD
+
 import br.com.letscode.rebels.dto.*;
 import br.com.letscode.rebels.entity.*;
 import lombok.Builder;
 
-=======
+
 import br.com.letscode.rebels.entity.Localizacao;
-import br.com.letscode.rebels.model.RebeldeEntity;
->>>>>>> 77176ee0a9a6a562b251cb210b22d1285b9b2b1e
+
+
 
 public class ConverterUtil {
 
