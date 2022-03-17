@@ -1,6 +1,5 @@
 package br.com.letscode.rebels.entity;
 
-import br.com.letscode.rebels.dto.InventarioDTO;
 import br.com.letscode.rebels.dto.LocalizacaoDTO;
 import br.com.letscode.rebels.dto.RebeldeResponseDTO;
 import br.com.letscode.rebels.dto.RebeldeResponseDTO.RebeldeResponseDTOBuilder;
