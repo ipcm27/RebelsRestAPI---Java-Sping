@@ -1,4 +1,4 @@
-package StarWarsRestAPIJavaSpring.letscode.controller;
+package br.com.letscode.rebels.controller;
 
 public class ItemController {
 

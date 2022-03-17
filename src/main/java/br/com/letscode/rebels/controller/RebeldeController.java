@@ -1,5 +1,4 @@
-package StarWarsRestAPIJavaSpring.letscode.controller;
-
+package br.com.letscode.rebels.controller;
 
 import br.com.letscode.rebels.dto.RebeldeResponseDTO;
 import br.com.letscode.rebels.service.RebeldeService;
