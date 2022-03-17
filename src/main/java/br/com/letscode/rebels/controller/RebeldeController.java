@@ -25,14 +25,12 @@ public class RebeldeController {
 		return ResponseEntity.ok(responseList);
 	}
 
-    //adicionar rebelde
-//    @PostMapping
-//    @ApiOperation(value = "Adicionar novo rebelde")
-//    public ResponseEntity<Rebelde> adicionar(@RequestBody @Valid RebeldeDTO rebeldeDto) {
-//        Rebelde novoRebelde = rebeldeService.adicionarRebelde(rebeldeDto);
-//        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(novoRebelde.getId()).toUri();
-//        return ResponseEntity.created(uri).body(novoRebelde);
-//    }
+    @PostMapping
+    public ResponseEntity<RebeldeResponseDTO> adicionarRebelde(@RequestBody RebeldeResponseDTO rebeldeDto) {
+        RebeldeResponseDTO novoRebelde = rebeldeService.adicionarRebelde(rebeldeDto);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().build().toUri();
+        return ResponseEntity.created(uri).body(novoRebelde);
+    }
 
     //atualizar localizacao
 //    @PutMapping("localizacao/{idRebelde}")

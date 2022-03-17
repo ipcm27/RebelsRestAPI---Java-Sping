@@ -34,12 +34,11 @@ public class RebeldeRepository {
         ));
     }
 
-    public static List<RebeldeEntity> getAll() {
-        return rebeldes;
-    }
+    public static List<RebeldeEntity> getAll() { return rebeldes; }
 
-    public static void save(RebeldeEntity entity) {
+    public static int save(RebeldeEntity entity) {
         rebeldes.add(entity);
+        return rebeldes.size();
     }
 
 }

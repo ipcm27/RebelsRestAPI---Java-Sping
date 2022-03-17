@@ -6,13 +6,10 @@ import br.com.letscode.rebels.entity.RebeldeEntity;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.letscode.rebels.dto.*;
+import br.com.letscode.rebels.repository.RebeldeRepository;
+import br.com.letscode.rebels.util.ConverterUtil;
 
 public class RebeldeService {
-
-	public RebeldeService() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public List<RebeldeResponseDTO> getAllRebels() {
 
@@ -41,8 +38,10 @@ public class RebeldeService {
 		return allRebels;
 	}
 	
-	 public RebeldeEntity adicionarRebelde(final RebeldeDTO rebeldeDto) {
-		 RebeldeEntity rebelde = convert(rebeldeDto, Rebelde.class);
+	 public RebeldeResponseDTO adicionarRebelde(final RebeldeResponseDTO rebeldeDto) {
+		 RebeldeEntity entity = ConverterUtil.toEntity(rebeldeDto);
+		 int id = RebeldeRepository.save(entity);
+		 return rebeldeDto;
 	 }
 
 }
